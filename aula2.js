@@ -45,3 +45,25 @@ if(forma === 'retangulo'){
  console.log(typeof number);
  console.log(typeof string);
 
+ //conversao implicita
+
+ const numeronumber = 786;
+ const numerostring ="786";
+
+ console.log(numeronumber == numerostring);
+ console.log(numeronumber === numerostring);
+ console.log(numeronumber + numerostring);
+
+ // conversao explicita
+ // number()
+ // string()
+
+ console.log(numeronumber + Number(numerostring));
+ 
+ const numeroconvertido = Number(numerostring);
+
+ console.log(numeronumber + numeroconvertido);
+
+ const numeroconvertidoerrado = Number("786a");
+
+ console.log(numeroconvertido + numeroconvertidoerrado);
